@@ -4,55 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HBNB - Place Details</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/images/icon.png" type="image/png">
 </head>
 <body>
     <header>
         <div class="header-container">
-            <img src="images/logo.png" alt="HBNB Logo" class="logo">
+            <img src="/images/logo.png" alt="HBNB Logo" class="logo">
             <nav>
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="login.html" class="login-button" id="login-link">Login</a>
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/login.html" class="login-button" id="login-link">Login</a>
                 <a href="#" class="login-button" id="logout-link" style="display:none;">Logout</a>
             </nav>
         </div>
     </header>
 
     <main class="place-details-container">
-        <div class="place-info">
-            <h1 id="place-title">Place Title</h1>
-            <img src="" alt="Place Image" id="place-image" class="place-image">
-            <div class="place-meta">
-                <span class="price" id="place-price">$100/night</span>
-                <span class="host" id="place-host">Host: John Doe</span>
-            </div>
-            <p class="description" id="place-description">Detailed description of the place...</p>
-            
-            <div class="amenities-section">
-                <h2>Amenities</h2>
-                <ul class="amenities-list" id="amenities-list">
-                    <!-- Amenities will be loaded here -->
-                </ul>
-            </div>
-        </div>
+        <section id="place-details" class="place-info">
+            <!-- Place details will be loaded here -->
+            <div class="loading">Loading place details...</div>
+        </section>
 
-        <div class="reviews-section">
+        <section id="reviews-section" class="reviews-section">
             <h2>Reviews</h2>
-            <div class="reviews-container" id="reviews-container">
+            <div id="reviews-list" class="reviews-list">
                 <!-- Reviews will be loaded here -->
             </div>
-            <div id="add-review-container" style="display:none;">
-                <a href="add_review.html" class="add-review-button">Add Review</a>
-            </div>
-        </div>
+        </section>
+
+        <section id="add-review-section" style="display:none;">
+            <h2>Add Your Review</h2>
+            <form id="add-review-form" class="review-form">
+                <input type="hidden" id="place-id">
+                <div class="form-group">
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="">Select a rating</option>
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="text">Review:</label>
+                    <textarea id="text" name="text" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit Review</button>
+            </form>
+        </section>
     </main>
 
     <footer>
         <p>© 2023 HBNB. All rights reserved.</p>
     </footer>
 
-    <script src="js/auth.js"></script>
-    <script src="js/place-details.js"></script>
-</body>
-</html>
+    <script src="/js/auth.js"></script>
+    <script src="/js/place-details.js"></script>
+</body> </html>
