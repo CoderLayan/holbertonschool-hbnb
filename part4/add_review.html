@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HBNB - Add Review</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/images/icon.png" type="image/png">
 </head>
 <body>
     <header>
         <div class="header-container">
-            <img src="images/logo.png" alt="HBNB Logo" class="logo">
+            <img src="/images/logo.png" alt="HBNB Logo" class="logo">
             <nav>
-                <a href="index.html" class="nav-link">Home</a>
+                <a href="/index.html" class="nav-link">Home</a>
                 <a href="#" class="login-button" id="logout-link">Logout</a>
             </nav>
         </div>
@@ -20,6 +20,7 @@
 
     <main class="review-form-container">
         <h1>Add Review</h1>
+        <div id="message-container"></div>
         <form id="review-form" class="review-form">
             <input type="hidden" id="place-id">
             <div class="form-group">
@@ -45,7 +46,8 @@
         <p>© 205 HBNB. All rights reserved.</p>
     </footer>
 
-    <script src="js/auth.js"></script>
-    <script src="js/reviews.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/add-review.js"></script>
 </body>
 </html>
+
