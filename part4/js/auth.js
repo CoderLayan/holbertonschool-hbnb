@@ -1,5 +1,5 @@
 // Authentication Service
-const API_BASE_URL = 'http://localhost:5000/api'; // Update with your API URL
+const API_BASE_URL = 'http://localhost:5000/api';
 
 document.addEventListener('DOMContentLoaded', () => {
     const loginForm = document.getElementById('login-form');
