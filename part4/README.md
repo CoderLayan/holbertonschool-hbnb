@@ -113,8 +113,8 @@ Authorization: Bearer <token>
 
 ## 🧑‍💻 Author
 
-**Shouq Alosaimi**
-**Layan Aljunayh**
+**Shouq Alosaimi,**
+**Layan Aljunayh,**
 **Razan Alabdulhadi**
 
 ---
